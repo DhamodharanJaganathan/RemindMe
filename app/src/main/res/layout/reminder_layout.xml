@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/base_toolbar"/>
+
+    <!--Put all strings to string.xml-->
+
+    <TextView
+        android:id="@+id/toDoReminderTextViewBody"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/primary"
+        android:ellipsize="middle"
+        android:gravity="center|start"
+        android:paddingLeft="16dp"
+        android:text="@string/example"
+        android:textColor="@color/icons"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:id="@+id/toDoReminderLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toDoReminderTextViewBody"
+        android:gravity="start"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/style_imagery_bestpractices_focus1"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
